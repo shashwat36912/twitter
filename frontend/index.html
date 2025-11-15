@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<style>
+			html, body {
+				background: #000000 !important;
+				color: #ffffff !important;
+			}
+			/* ensure root container fills screen */
+			#root { min-height: 100vh; }
+
+			/* Make form controls dark so text is readable on black background */
+			input, textarea, select, .input, .textarea, .dropdown-content, .modal-box {
+				background: #0b0b0b !important;
+				color: #ffffff !important;
+				border-color: rgba(255,255,255,0.06) !important;
+			}
+			input::placeholder, textarea::placeholder, .input::placeholder, .textarea::placeholder {
+				color: rgba(255,255,255,0.6) !important;
+			}
+			input:focus, textarea:focus, .input:focus, .textarea:focus {
+				outline: none !important;
+				box-shadow: 0 0 0 4px rgba(255,255,255,0.03) !important;
+				border-color: rgba(255,255,255,0.12) !important;
+			}
+		</style>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>X Clone</title>
+	</head>
+	<body>
+		<div id="root"></div>
+		<script type="module" src="/src/main.jsx"></script>
+	</body>
+</html>

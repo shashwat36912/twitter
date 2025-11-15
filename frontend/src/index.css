@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small UX helpers and micro-interactions */
+@keyframes heart-pop {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.4); }
+	100% { transform: scale(1); }
+}
+
+.heart-pop {
+	animation: heart-pop 320ms cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes shimmer {
+	0% { background-position: -200% 0; }
+	100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+	background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 75%);
+	background-size: 200% 100%;
+	animation: shimmer 1.2s linear infinite;
+}
+
+.interactive { transition: transform .14s ease, color .14s ease, opacity .12s ease; }
+.interactive:active { transform: scale(.97); }
+.btn-disabled { opacity: .6; cursor: not-allowed; }
+
+.img-preview { box-shadow: 0 6px 18px rgba(0,0,0,0.6); transition: transform .18s ease, opacity .18s ease; }
+.img-preview:hover { transform: translateY(-4px) scale(1.01); }
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Small UX helpers and micro-interactions */
+@keyframes heart-pop {
+	0% { transform: scale(1); }
+	50% { transform: scale(1.4); }
+	100% { transform: scale(1); }
+}
+
+.heart-pop {
+	animation: heart-pop 320ms cubic-bezier(.2,.8,.2,1);
+}
+
+@keyframes shimmer {
+	0% { background-position: -200% 0; }
+	100% { background-position: 200% 0; }
+}
+
+.skeleton-shimmer {
+	background: linear-gradient(90deg, rgba(255,255,255,0.03) 25%, rgba(255,255,255,0.06) 50%, rgba(255,255,255,0.03) 75%);
+	background-size: 200% 100%;
+	animation: shimmer 1.2s linear infinite;
+}
+
+.interactive { transition: transform .14s ease, color .14s ease, opacity .12s ease; }
+.interactive:active { transform: scale(.97); }
+.btn-disabled { opacity: .6; cursor: not-allowed; }
+
+.img-preview { box-shadow: 0 6px 18px rgba(0,0,0,0.6); transition: transform .18s ease, opacity .18s ease; }
+.img-preview:hover { transform: translateY(-4px) scale(1.01); }
